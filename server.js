@@ -10,7 +10,9 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://agenticenterprise.github.io"
+  }));
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
