@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: "https://agenticenterprise.github.io"
+    origin: "*"
   }));
 app.use(express.json());
 
